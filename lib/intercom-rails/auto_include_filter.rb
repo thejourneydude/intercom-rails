@@ -3,6 +3,8 @@ module IntercomRails
   module AutoInclude
     module Method
       def intercom_rails_auto_include
+        puts "%" * 30
+        puts "intercom loaded their method #intercom_rails_auto_include"
         IntercomRails::AutoInclude::Filter.filter(self)
       end
     end
